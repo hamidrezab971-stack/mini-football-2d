@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1924">
+  <title>Mini Football 2D | فوتبال دوبعدی</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div><span class="eyebrow">MINI FOOTBALL 2D</span><h1>⚽ فوتبال دوبعدی</h1><p>نسخه اولیه — یک مسابقه سریع مقابل هوش مصنوعی</p></div>
+      <span class="status"><span class="dot"></span> آماده مسابقه</span>
+    </header>
+    <section class="board" aria-label="بازی فوتبال">
+      <div class="scorebar"><div class="side"><span class="swatch blue"></span> شما <strong id="score-blue">0</strong></div><div class="center"><span id="timer">01:30</span><small id="game-status">برای شروع دکمه شروع بازی را بزنید</small></div><div class="side"><strong id="score-red">0</strong> حریف <span class="swatch red"></span></div></div>
+      <div class="pitch-wrap"><canvas id="game" width="960" height="540" role="img" aria-label="زمین فوتبال دوبعدی شامل بازیکنان و توپ"></canvas><div id="game-overlay" class="overlay"><div class="overlay-card"><div class="trophy">⚽</div><h2 id="overlay-title">آماده مسابقه‌ای؟</h2><p id="overlay-text">دروازه حریف سمت راست زمین است.</p><button id="play-button" class="primary">شروع بازی</button></div></div></div>
+      <div class="below"><div><b>کنترل روی کامپیوتر</b><span>حرکت: WASD یا جهت‌ها &nbsp; | &nbsp; شوت: Space &nbsp; | &nbsp; سرعت: Shift</span></div><button id="restart-button" class="secondary">↻ بازی جدید</button></div>
+    </section>
+    <section class="touch-controls" aria-label="دکمه‌های لمسی بازی"><div class="dpad"><button data-control="up" aria-label="بالا">▲</button><div><button data-control="left" aria-label="چپ">◀</button><button data-control="down" aria-label="پایین">▼</button><button data-control="right" aria-label="راست">▶</button></div></div><button id="touch-shoot" class="shoot">شوت ⚽</button></section>
+    <footer>ساخته‌شده با HTML5 Canvas و JavaScript — آماده برای GitHub Pages و توسعه با Codex</footer>
+  </main>
+</body>
+</html>
